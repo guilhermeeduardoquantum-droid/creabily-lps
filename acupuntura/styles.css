@@ -1,0 +1,42 @@
+/**
+ * Estilos específicos da LP Acupuntura (foco: Fibromialgia).
+ * Ajustes pontuais que não pertencem ao components.css compartilhado.
+ *
+ * O Hero desta LP usa vídeo de fundo (acupuntura/assets/hero-video.mp4),
+ * estrutura e overlay definidos em shared/styles/components.css (.hero,
+ * .hero__video, .hero::before).
+ */
+
+/* ---------- Ilustração da seção "Agitação" (silhueta + pontos de dor) ---------- */
+
+.fibro-illustration__body {
+  color: var(--color-primary);
+}
+
+.fibro-illustration__point {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: fibro-pulse 3.6s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes fibro-pulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.55);
+  }
+  14% {
+    opacity: 0.9;
+    transform: scale(1.2);
+  }
+  30% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+  46%,
+  100% {
+    opacity: 0;
+    transform: scale(0.55);
+  }
+}
