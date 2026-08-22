@@ -119,17 +119,19 @@
     <!-- ===== 1. HERO ===== -->
     <section class="hero">
       <video
-        class="hero__video"
+        class="hero-video"
         autoplay
         muted
         loop
         playsinline
+        preload="auto"
         poster="assets/hero-poster.webp"
         aria-hidden="true"
       >
         <source src="assets/hero-video.mp4" type="video/mp4" />
       </video>
-      <div class="container hero__content">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
         <span class="hero__eyebrow">Bruxismo e DTM · Clínica Creabily</span>
         <h1 class="hero__title">
           Acorda com dor de cabeça, estalos ao abrir a boca ou cansaço na mandíbula?

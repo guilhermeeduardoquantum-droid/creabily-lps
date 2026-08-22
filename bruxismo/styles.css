@@ -4,10 +4,47 @@
  * padrão visual da LP Acupuntura (fundo claro, cards brancos, tipografia
  * Playfair + Inter, animações de scroll padrão).
  *
- * O Hero desta LP usa vídeo de fundo (bruxismo/assets/hero-video.mp4),
- * estrutura e overlay definidos em shared/styles/components.css (.hero,
- * .hero__video, .hero::before).
+ * O Hero desta LP usa vídeo de fundo (bruxismo/assets/hero-video.mp4) com
+ * estrutura própria (.hero-video/.hero-overlay/.hero-content) em vez do
+ * padrão .hero__video/.hero__content do components.css — por isso o overlay
+ * escuro do componente compartilhado (.hero::before) é neutralizado abaixo,
+ * pra não duplicar o escurecimento com a .hero-overlay explícita.
  */
+
+/* ---------- Hero (vídeo + overlay + conteúdo) ---------- */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.hero::before {
+  content: none;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-block: var(--space-2xl) var(--space-xl);
+  width: 100%;
+}
 
 /* ---------- Ilustração da seção "Agitação" (rosto + pontos de calor) ---------- */
 
