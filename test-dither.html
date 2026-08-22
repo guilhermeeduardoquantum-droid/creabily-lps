@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teste — Dither Background</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      font-family: system-ui, sans-serif;
+    }
+    .dither-background {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .dither-background h1 {
+      color: #ffffff;
+      font-size: 64px;
+      letter-spacing: 0.1em;
+      text-align: center;
+      z-index: 1;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dither-background" data-colors="termografia">
+    <h1>TERMOGRAFIA</h1>
+  </div>
+
+  <script src="shared/components/dither-background.js"></script>
+</body>
+</html>
