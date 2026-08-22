@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bruxismo e DTM em São Paulo | Tratamento Integrado com Termografia | Clínica Creabily</title>
+  <meta
+    name="description"
+    content="Sofre com bruxismo, dor na mandíbula ou estalos? A Creabily oferece tratamento integrado com Fisioterapia Orofacial, Psicoterapia e Termografia da face. Agende sua avaliação."
+  />
+  <link rel="canonical" href="https://bruxismo.creabily.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bruxismo e DTM em São Paulo | Tratamento Integrado com Termografia | Clínica Creabily" />
+  <meta
+    property="og:description"
+    content="Acorda com dor de cabeça, estalos ao abrir a boca ou cansaço na mandíbula? Descubra o tratamento integrado com Fisioterapia Orofacial, Psicoterapia e Termografia na Clínica Creabily."
+  />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://bruxismo.creabily.com/assets/hero-poster.webp" />
+
+  <!-- Google Fonts: Playfair Display (headlines) + Inter (corpo/labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="shared/styles/reset.css" />
+  <link rel="stylesheet" href="shared/styles/variables.css" />
+  <link rel="stylesheet" href="shared/styles/components.css" />
+  <link rel="stylesheet" href="shared/styles/animations.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MedicalClinic",
+          "name": "Clínica Creabily — Av. Paulista",
+          "image": "https://creabily.com/shared/assets/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Avenida Paulista, 1159, conj. 311, 312, 313",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          },
+          "telephone": "+5511933130234",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "07:00",
+              "closes": "19:45"
+            }
+          ],
+          "medicalSpecialty": "Fisioterapia Orofacial, Psicoterapia"
+        },
+        {
+          "@type": "MedicalClinic",
+          "name": "Clínica Creabily — Granja Viana",
+          "image": "https://creabily.com/shared/assets/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. do Golf, 47, Granja Viana",
+            "addressLocality": "Jandira",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          },
+          "telephone": "+5511914429741",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "07:00",
+              "closes": "19:45"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Saturday"],
+              "opens": "08:00",
+              "closes": "12:00"
+            }
+          ],
+          "medicalSpecialty": "Fisioterapia Orofacial, Psicoterapia"
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <!-- Ambiente termográfico único, fixo atrás de toda a página -->
+  <div class="dither-background dither-fixed" data-colors="termografia" aria-hidden="true"></div>
+
+  <!-- ===== HEADER (shared/components/header.html) ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a
+        class="site-header__logo"
+        href="https://creabily.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Creabily — ir para o site institucional"
+      >
+        <img
+          class="site-header__logo-img"
+          src="shared/assets/logo.png"
+          alt=""
+          width="40"
+          height="40"
+        />
+        creabily
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 1. HERO ===== -->
+    <section class="hero section-transparent">
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="assets/hero-poster.webp"
+        aria-hidden="true"
+      >
+        <source src="assets/hero-video.mp4" type="video/mp4" />
+      </video>
+      <div class="container hero__content">
+        <span class="hero__eyebrow">Bruxismo e DTM · Clínica Creabily</span>
+        <h1 class="hero__title">
+          Acorda com dor de cabeça, estalos ao abrir a boca ou cansaço na mandíbula?
+        </h1>
+        <p class="hero__subtitle">
+          Isso é Bruxismo e DTM — e a plaquinha, sozinha, não resolve. Descubra
+          o tratamento integrado que ataca a raiz física e emocional na Creabily.
+        </p>
+        <div class="hero__cta">
+          <a
+            class="btn btn-whatsapp btn-block"
+            href="https://api.whatsapp.com/send/?phone=5511914429741&text=Ol%C3%A1!%20Vi%20a%20p%C3%A1gina%20sobre%20Bruxismo%20e%20DTM%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20integrada."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Quero agendar minha avaliação →
+          </a>
+          <p class="microtext">
+            Atendimento humanizado · Aceitamos convênios · +15 anos de experiência
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. IDENTIFICAÇÃO DO PROBLEMA ===== -->
+    <section class="section section-glass">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-reveal="fade-up">
+            Se você se reconhece nesses sinais, sua mandíbula está te mandando um recado
+          </h2>
+        </div>
+
+        <ul class="checklist" data-reveal-group data-reveal-stagger="100">
+          <li class="checklist__item" data-reveal="slide-left">
+            <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Dor de cabeça ao acordar, sem causa aparente
+          </li>
+          <li class="checklist__item" data-reveal="slide-left">
+            <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Estalos ou "travas" ao abrir a boca
+          </li>
+          <li class="checklist__item" data-reveal="slide-left">
+            <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Cansaço na mandíbula durante o dia, como se tivesse "batalhado" a noite toda
+          </li>
+          <li class="checklist__item" data-reveal="slide-left">
+            <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Dentes desgastados, sensíveis ou trincados
+          </li>
+          <li class="checklist__item" data-reveal="slide-left">
+            <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Ranger de dentes durante o sono (confirmado por quem dorme com você)
+          </li>
+          <li class="checklist__item" data-reveal="slide-left">
+            <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Tensão no rosto, pescoço e ombros que não passa com massagem comum
+          </li>
+        </ul>
+
+        <p class="closing-statement" data-reveal="fade-up">
+          Você não está exagerando. Seu corpo está pedindo um cuidado que a plaquinha não consegue dar.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 3. AGITAÇÃO (transparente — deixa o ambiente termográfico global aparecer) ===== -->
+    <section class="section section-transparent">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-reveal="fade-up">Por que a plaquinha, sozinha, não resolve</h2>
+        </div>
+
+        <div class="agitation-layout">
+          <div class="prose" data-reveal="fade-up-sm">
+            <p>
+              O bruxismo não é só um problema mecânico dos dentes — é um
+              <strong>sintoma de um circuito de tensão</strong> que envolve
+              músculos, sistema nervoso e emoções trabalhando juntos. A
+              plaquinha protege o esmalte dental, mas não desativa o que faz
+              você apertar os dentes em primeiro lugar.
+            </p>
+            <p>
+              Sob pressão, ansiedade, TPM ou estresse acumulado, você aperta
+              os dentes de forma inconsciente — principalmente à noite. Isso
+              sobrecarrega os músculos da mastigação (masseter, temporal,
+              pterigóideos) que ficam em tensão constante, gerando dor,
+              cansaço e disfunção na articulação temporomandibular (a ATM,
+              aquela que estala).
+            </p>
+            <p>
+              Enquanto o gatilho emocional continuar ativo e os músculos não
+              forem tratados diretamente, o ciclo se repete todas as noites.
+              <strong>É por isso que muita gente troca a plaquinha, troca de
+              dentista, e a dor volta.</strong>
+            </p>
+          </div>
+
+          <div class="agitation-layout__icon" data-reveal="scale-fade" aria-hidden="true">
+            <svg class="heat-face" viewBox="0 0 160 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="heatGlowAmber" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#f4a742" stop-opacity="0.95" />
+                  <stop offset="70%" stop-color="#f4a742" stop-opacity="0.4" />
+                  <stop offset="100%" stop-color="#f4a742" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="heatGlowRed" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#d63838" stop-opacity="0.95" />
+                  <stop offset="70%" stop-color="#d63838" stop-opacity="0.4" />
+                  <stop offset="100%" stop-color="#d63838" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+
+              <!-- Silhueta do rosto (linha minimalista) -->
+              <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M80 12c-30 0-46 24-46 54 0 20 6 36 14 48 8 12 20 22 32 22s24-10 32-22c8-12 14-28 14-48 0-30-16-54-46-54Z" />
+                <path d="M50 60c0-6 4-10 8-10" />
+                <path d="M102 60c0-6-4-10-8-10" />
+                <path d="M68 128c6 4 14 6 12 6s6-2 12-6" />
+              </g>
+
+              <!-- Pontos de calor: temporal (têmpora), masseter (bochecha) e ATM (frente do ouvido) — bilaterais -->
+              <g class="heat-face__point" style="--delay: 0s">
+                <circle cx="46" cy="46" r="12" fill="url(#heatGlowAmber)" />
+                <circle cx="46" cy="46" r="4" fill="#f4a742" />
+              </g>
+              <g class="heat-face__point" style="--delay: 0.5s">
+                <circle cx="114" cy="46" r="12" fill="url(#heatGlowAmber)" />
+                <circle cx="114" cy="46" r="4" fill="#f4a742" />
+              </g>
+              <g class="heat-face__point" style="--delay: 1s">
+                <circle cx="40" cy="86" r="13" fill="url(#heatGlowRed)" />
+                <circle cx="40" cy="86" r="4.5" fill="#d63838" />
+              </g>
+              <g class="heat-face__point" style="--delay: 1.5s">
+                <circle cx="120" cy="86" r="13" fill="url(#heatGlowRed)" />
+                <circle cx="120" cy="86" r="4.5" fill="#d63838" />
+              </g>
+              <g class="heat-face__point" style="--delay: 2s">
+                <circle cx="44" cy="108" r="11" fill="url(#heatGlowAmber)" />
+                <circle cx="44" cy="108" r="4" fill="#f4a742" />
+              </g>
+              <g class="heat-face__point" style="--delay: 2.5s">
+                <circle cx="116" cy="108" r="11" fill="url(#heatGlowAmber)" />
+                <circle cx="116" cy="108" r="4" fill="#f4a742" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. MECANISMO MULTIDISCIPLINAR ===== -->
+    <section class="section section-glass">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-reveal="fade-up">
+            Fisioterapia Orofacial + Psicoterapia: tratando a raiz por dois lados
+          </h2>
+          <p class="section-subtitle" data-reveal="fade-up-sm">
+            Enquanto uma libera a tensão física, a outra desativa o gatilho
+            emocional. Juntas, quebram o ciclo.
+          </p>
+        </div>
+
+        <div class="specialty-grid" data-reveal-group data-reveal-stagger="150">
+          <div class="specialty-card" data-reveal="fade-up">
+            <div class="specialty-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M8 3c-2 0-4 2-4 6 0 5 2 9 4 11 1.5 1.5 3 2 4 2s2.5-.5 4-2c2-2 4-6 4-11 0-4-2-6-4-6" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 12c1 1 2 1.5 3 1.5s2-.5 3-1.5" stroke-linecap="round" />
+              </svg>
+            </div>
+            <span class="specialty-card__eyebrow">Ataca a raiz física</span>
+            <h3 class="specialty-card__title">Fisioterapia Orofacial</h3>
+            <p class="specialty-card__text">
+              Nossa fisioterapia orofacial atua diretamente nos músculos da
+              mastigação e na articulação temporomandibular. Com técnicas
+              manuais especializadas, liberação miofascial e reeducação da
+              musculatura, desativamos a tensão acumulada e devolvemos
+              mobilidade à ATM.
+            </p>
+            <ul class="specialty-card__bullets">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                Alívio da dor muscular já nas primeiras sessões
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                Redução dos estalos e travamentos ao abrir a boca
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                Reeducação postural da mandíbula e do pescoço
+              </li>
+            </ul>
+          </div>
+
+          <div class="specialty-card" data-reveal="fade-up">
+            <div class="specialty-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 3a6 6 0 0 0-6 6c0 2 .8 3.2 1.6 4.3.5.7.9 1.3.9 2.2V17a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-1.5c0-.9.4-1.5.9-2.2C17.2 12.2 18 11 18 9a6 6 0 0 0-6-6Z" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 21h4" stroke-linecap="round" />
+              </svg>
+            </div>
+            <span class="specialty-card__eyebrow">Ataca a raiz emocional</span>
+            <h3 class="specialty-card__title">Psicoterapia</h3>
+            <p class="specialty-card__text">
+              O que faz você apertar os dentes começa na mente. Nossa
+              psicoterapia investiga e trabalha os gatilhos emocionais —
+              ansiedade, estresse, padrões de pressão — que mantêm o ciclo do
+              bruxismo ativo. Aqui a proposta não é "aprender a relaxar", é
+              entender o que dispara a tensão e desmontar esse mecanismo.
+            </p>
+            <ul class="specialty-card__bullets">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                Identificação dos gatilhos individuais de ansiedade
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                Ferramentas práticas para lidar com pressão e estresse
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                Trabalho na raiz do padrão, não só nos sintomas
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Diagrama de integração: as duas frentes se somando -->
+        <div class="integration-diagram" data-reveal="fade-up" aria-hidden="true">
+          <div class="integration-diagram__node">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M8 3c-2 0-4 2-4 6 0 5 2 9 4 11 1.5 1.5 3 2 4 2s2.5-.5 4-2c2-2 4-6 4-11 0-4-2-6-4-6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Fisio Orofacial
+          </div>
+          <span class="integration-diagram__op">+</span>
+          <div class="integration-diagram__node">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 3a6 6 0 0 0-6 6c0 2 .8 3.2 1.6 4.3.5.7.9 1.3.9 2.2V17a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-1.5c0-.9.4-1.5.9-2.2C17.2 12.2 18 11 18 9a6 6 0 0 0-6-6Z" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Psicoterapia
+          </div>
+          <span class="integration-diagram__op">=</span>
+          <div class="integration-diagram__node">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5 6.5 5c2 0 3.5 1.2 4.5 2.5C12 6.2 13.5 5 15.5 5 19.5 5 21 9 19.5 12.5 17 16.65 12 21 12 21Z" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Ciclo quebrado
+          </div>
+        </div>
+
+        <p class="compliance-note">
+          Resultados podem variar de pessoa para pessoa. Tratamentos
+          complementares conduzidos por profissionais qualificados.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 5. DIFERENCIAL TÉCNICO: TERMOGRAFIA (seção-vitrine, transparente sobre o ambiente global) ===== -->
+    <section class="section section-transparent section--diferencial">
+      <div class="container">
+        <div class="section-header">
+          <span class="diferencial-badge">★ Diferencial exclusivo Creabily</span>
+          <h2 class="section-title" data-reveal="fade-up">
+            Termografia da face: veja o que ninguém mais te mostrou
+          </h2>
+        </div>
+
+        <div class="prose" data-reveal="fade-up-sm" style="margin-inline: auto; text-align: center;">
+          <p>
+            A <strong>termografia</strong> é um exame de imagem funcional,
+            não invasivo e sem radiação, que mapeia em tempo real as áreas de
+            calor no seu rosto e pescoço. Áreas mais quentes indicam tensão
+            muscular ativa e inflamação. Áreas mais frias podem indicar
+            circulação prejudicada.
+          </p>
+          <p>
+            Na Creabily, usamos a termografia como parte da avaliação inicial
+            do bruxismo e DTM. Isso permite ver exatamente onde a tensão está
+            mais concentrada, personalizar seu tratamento e acompanhar sua
+            evolução com imagem — não só com sensação.
+          </p>
+        </div>
+
+        <ul class="diferencial-bullets" data-reveal-group data-reveal-stagger="120">
+          <li data-reveal="fade-up">
+            <svg class="diferencial-bullets__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span><strong>Mapeia sua tensão real</strong> — não trabalhamos "no achismo", vemos o que precisa ser tratado</span>
+          </li>
+          <li data-reveal="fade-up">
+            <svg class="diferencial-bullets__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span><strong>Não invasivo e sem radiação</strong> — seguro para exames repetidos ao longo do tratamento</span>
+          </li>
+          <li data-reveal="fade-up">
+            <svg class="diferencial-bullets__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span><strong>Guia seu plano personalizado</strong> — cada sessão de fisioterapia é direcionada às áreas mapeadas</span>
+          </li>
+        </ul>
+
+        <p class="authority-quote" data-reveal="fade-up">
+          Poucas clínicas em São Paulo oferecem termografia como parte
+          integrada do tratamento de bruxismo e DTM.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 6. AUTORIDADE ===== -->
+    <section class="section section-glass">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-reveal="fade-up">Cuidado integrado, não fragmentado</h2>
+          <p class="section-subtitle" data-reveal="fade-up-sm">
+            Aqui você não precisa marcar consulta em três clínicas diferentes,
+            coordenar profissionais por conta própria, nem receber
+            diagnósticos desconectados. Fisioterapia orofacial, psicoterapia e
+            a termografia acontecem sob o mesmo teto, com equipe coordenada e
+            um único plano de tratamento pensado pra sua raiz do problema.
+          </p>
+        </div>
+
+        <div class="counter-grid" data-reveal-group data-reveal-stagger="150">
+          <div class="counter" data-reveal="fade-up">
+            <span class="counter__value" data-reveal="counter" data-counter-target="15" data-counter-prefix="+">0</span>
+            <span class="counter__label">anos de experiência</span>
+          </div>
+          <div class="counter" data-reveal="fade-up">
+            <span class="counter__value" data-reveal="counter" data-counter-target="500" data-counter-prefix="+" data-counter-suffix=" mil">0</span>
+            <span class="counter__label">atendimentos realizados</span>
+          </div>
+          <div class="counter" data-reveal="fade-up">
+            <span class="counter__value" data-reveal="counter" data-counter-target="2">0</span>
+            <span class="counter__label">unidades em São Paulo</span>
+          </div>
+          <div class="counter" data-reveal="fade-up">
+            <span class="counter__value">✓</span>
+            <span class="counter__label">Convênios aceitos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. COMO FUNCIONA (stepper 5 passos) ===== -->
+    <section class="section section-glass">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-reveal="fade-up">Seu primeiro passo até o alívio</h2>
+        </div>
+
+        <div class="stepper" data-reveal-group data-reveal-stagger="120">
+          <div class="step" data-reveal="slide-left">
+            <div>
+              <p class="step__title">Avaliação integrada inicial</p>
+              <p class="step__text">
+                Você é recebida pela equipe que vai cuidar de você —
+                fisioterapeuta orofacial + profissional de psicoterapia —
+                para entender seu histórico, sintomas e rotina.
+              </p>
+            </div>
+          </div>
+          <div class="step" data-reveal="slide-left">
+            <div>
+              <p class="step__title">Termografia da face</p>
+              <p class="step__text">
+                Realizamos o mapeamento térmico das áreas de tensão para
+                guiar seu tratamento com precisão.
+              </p>
+            </div>
+          </div>
+          <div class="step" data-reveal="slide-left">
+            <div>
+              <p class="step__title">Plano personalizado com Fisio Orofacial + Psicoterapia</p>
+              <p class="step__text">
+                Montamos seu protocolo individual, com frequência de sessões
+                e objetivos claros para as duas frentes.
+              </p>
+            </div>
+          </div>
+          <div class="step" data-reveal="slide-left">
+            <div>
+              <p class="step__title">Sessões coordenadas entre profissionais</p>
+              <p class="step__text">
+                Fisioterapia orofacial libera a tensão física, psicoterapia
+                trabalha o gatilho emocional. Os profissionais se comunicam
+                entre si sobre sua evolução.
+              </p>
+            </div>
+          </div>
+          <div class="step" data-reveal="slide-left">
+            <div>
+              <p class="step__title">Reavaliação e ajustes</p>
+              <p class="step__text">
+                Nova termografia após ciclo de sessões para medir evolução
+                real. Ajustamos o plano conforme sua resposta ao tratamento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8. FAQ ===== -->
+    <section class="section section-glass">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-reveal="fade-up">Perguntas frequentes</h2>
+        </div>
+
+        <div class="faq" data-reveal-group data-reveal-stagger="80">
+          <details class="faq-item" data-reveal="fade-in">
+            <summary class="faq-item__question">A termografia dói ou é desconfortável?</summary>
+            <p class="faq-item__answer">
+              Não. É um exame de imagem à distância — uma câmera especial
+              capta o calor da sua pele sem contato físico. Você fica em pé
+              por alguns minutos em um ambiente climatizado, e as imagens são
+              geradas em tempo real.
+            </p>
+          </details>
+
+          <details class="faq-item" data-reveal="fade-in">
+            <summary class="faq-item__question">Quantas sessões são necessárias?</summary>
+            <p class="faq-item__answer">
+              Depende do quadro de cada pessoa e do que a avaliação inicial
+              revelar. A média é entre 8 e 12 sessões de fisioterapia
+              orofacial, com psicoterapia acontecendo em paralelo em
+              frequência semanal ou quinzenal. Isso será definido no seu
+              plano personalizado.
+            </p>
+          </details>
+
+          <details class="faq-item" data-reveal="fade-in">
+            <summary class="faq-item__question">Preciso continuar usando a plaquinha do dentista?</summary>
+            <p class="faq-item__answer">
+              Sim, se seu dentista prescreveu. Nosso tratamento não substitui
+              a plaquinha — ele trata o que a plaquinha não alcança (a tensão
+              muscular e o gatilho emocional). A plaquinha continua
+              protegendo o esmalte dental enquanto a raiz do problema é
+              tratada.
+            </p>
+          </details>
+
+          <details class="faq-item" data-reveal="fade-in">
+            <summary class="faq-item__question">O convênio cobre esse tratamento?</summary>
+            <p class="faq-item__answer">
+              Trabalhamos com convênios credenciados — confirme o seu
+              diretamente com nossa equipe pelo WhatsApp. A termografia pode
+              ter cobertura específica dependendo do plano.
+            </p>
+          </details>
+
+          <details class="faq-item" data-reveal="fade-in">
+            <summary class="faq-item__question">Em quanto tempo sinto alívio?</summary>
+            <p class="faq-item__answer">
+              Muitos pacientes relatam redução da dor muscular já nas
+              primeiras 2-3 sessões de fisioterapia orofacial. A melhora do
+              padrão emocional é gradual e acompanha o processo
+              psicoterapêutico. Cada organismo responde de um jeito.
+            </p>
+          </details>
+
+          <details class="faq-item" data-reveal="fade-in">
+            <summary class="faq-item__question">Como funcionam duas especialidades juntas na prática?</summary>
+            <p class="faq-item__answer">
+              Você não precisa se preocupar em coordenar nada. Nossa equipe
+              agenda as sessões de forma harmônica e os profissionais
+              compartilham informações sobre sua evolução (dentro do sigilo
+              profissional). Você segue um plano único, com objetivos claros
+              para cada frente.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. CTA FINAL ===== -->
+    <section class="section cta-final section-glass">
+      <div class="container">
+        <h2 class="section-title" data-reveal="fade-up">
+          Você não precisa continuar convivendo com essa tensão
+        </h2>
+        <p class="section-subtitle" data-reveal="fade-up-sm">
+          Agende sua avaliação integrada com termografia e descubra como a
+          Creabily pode te ajudar a quebrar o ciclo do bruxismo.
+        </p>
+
+        <div class="cta-final__buttons" data-reveal-group data-reveal-stagger="120">
+          <a
+            class="btn btn-whatsapp"
+            data-reveal="scale-fade"
+            href="https://api.whatsapp.com/send/?phone=5511933130234&text=Ol%C3%A1!%20Quero%20agendar%20avalia%C3%A7%C3%A3o%20integrada%20de%20Bruxismo%2FDTM%20com%20termografia%20%E2%80%94%20Unidade%20Paulista"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            📍 Agendar na Unidade Av. Paulista →
+          </a>
+          <a
+            class="btn btn-whatsapp"
+            data-reveal="scale-fade"
+            href="https://api.whatsapp.com/send/?phone=5511914429741&text=Ol%C3%A1!%20Quero%20agendar%20avalia%C3%A7%C3%A3o%20integrada%20de%20Bruxismo%2FDTM%20com%20termografia%20%E2%80%94%20Unidade%20Granja%20Viana"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            📍 Agendar na Unidade Granja Viana →
+          </a>
+        </div>
+
+        <div class="cta-final__info">
+          <div class="unit-info">
+            <p class="unit-info__name">Unidade Av. Paulista</p>
+            <p class="unit-info__detail">
+              Avenida Paulista, 1159 — conj. 311, 312, 313 — São Paulo/SP
+            </p>
+            <p class="unit-info__detail">
+              Seg. a sex., 7h às 19h45 · Sábado: fechado
+            </p>
+          </div>
+          <div class="unit-info">
+            <p class="unit-info__name">Unidade Granja Viana</p>
+            <p class="unit-info__detail">
+              R. do Golf, 47 — Granja Viana, Jandira/SP
+            </p>
+            <p class="unit-info__detail">
+              Seg. a sex., 7h às 19h45 · Sábado, 8h às 12h
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (shared/components/footer.html) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <div class="site-footer__logo">creabily</div>
+          <p class="site-footer__tagline">
+            Cuidado integrado em saúde, com +15 anos de experiência em São
+            Paulo.
+          </p>
+          <p class="site-footer__compliance">
+            Os tratamentos oferecidos são complementares e conduzidos por
+            profissionais qualificados. Resultados podem variar de pessoa
+            para pessoa.
+          </p>
+        </div>
+
+        <div>
+          <p class="site-footer__unit-name">Unidade Av. Paulista</p>
+          <p class="site-footer__unit-detail">
+            Avenida Paulista, 1159 — conj. 311, 312, 313 — São Paulo/SP
+          </p>
+          <p class="site-footer__unit-detail">
+            Seg. a sex., 7h às 19h45 · Sábado: fechado
+          </p>
+          <a
+            class="site-footer__social"
+            href="https://instagram.com/creabily_avpaulista"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none" />
+            </svg>
+            @creabily_avpaulista
+          </a>
+        </div>
+
+        <div>
+          <p class="site-footer__unit-name">Unidade Granja Viana</p>
+          <p class="site-footer__unit-detail">
+            R. do Golf, 47 — Granja Viana, Jandira/SP
+          </p>
+          <p class="site-footer__unit-detail">
+            Seg. a sex., 7h às 19h45 · Sábado, 8h às 12h
+          </p>
+          <a
+            class="site-footer__social"
+            href="https://instagram.com/creabily_granjaviana"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none" />
+            </svg>
+            @creabily_granjaviana
+          </a>
+        </div>
+      </div>
+
+      <p class="site-footer__copyright">
+        © 2026 Clínica Creabily. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script
+    src="shared/components/whatsapp-sticky.js"
+    data-phone="5511914429741"
+    data-message="Olá! Vi a página sobre Bruxismo e DTM e quero agendar uma avaliação integrada."
+  ></script>
+  <script src="shared/components/scroll-reveal.js"></script>
+  <script src="shared/components/faq-accordion.js"></script>
+  <script src="shared/components/dither-background.js"></script>
+</body>
+</html>

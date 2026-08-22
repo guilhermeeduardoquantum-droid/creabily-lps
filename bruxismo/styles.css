@@ -1,0 +1,400 @@
+/**
+ * Estilos específicos da LP Bruxismo/DTM (Fisioterapia Orofacial + Psicoterapia).
+ *
+ * A LP inteira vive dentro de um único ambiente termográfico: um canvas
+ * WebGL fixo (.dither-fixed) cobre a viewport inteira atrás de tudo.
+ * Seções "transparentes" deixam o padrão passar direto; seções "glass"
+ * flutuam sobre ele em vidro fosco, pra manter a leitura confortável em
+ * conteúdo mais denso (checklist, FAQ, stepper etc.).
+ */
+
+/* ============ BASE — página inteira dentro do ambiente térmico ============ */
+
+body {
+  background: #0a1520;
+  color: #f5f0e6;
+}
+
+.section-title {
+  color: #ffffff;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section-subtitle {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.microtext,
+.compliance-note {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.prose {
+  color: #f5f0e6;
+}
+
+.closing-statement {
+  color: #f4a742;
+}
+
+/* ============ Background termográfico fixo (único, cobre a página toda) ============ */
+
+.dither-fixed {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ============ Seções como camadas ============ */
+
+.section-transparent {
+  background: transparent;
+}
+
+.section-glass {
+  background: rgba(10, 21, 32, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* CTA Final tinha gradiente próprio (components.css) — vidro fosco tem que vencer */
+.cta-final.section-glass {
+  background: rgba(10, 21, 32, 0.85);
+}
+
+/* ============ Header ============ */
+
+.site-header {
+  background: rgba(10, 21, 32, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.site-header__logo {
+  color: #ffffff;
+}
+
+.site-header__logo-img {
+  filter: brightness(0) invert(1);
+}
+
+/* ============ Footer ============ */
+
+.site-footer {
+  background: rgba(10, 21, 32, 0.95);
+}
+
+/* ============ Cards translúcidos (checklist, mecanismo, FAQ) ============ */
+
+.checklist__item,
+.specialty-card,
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+}
+
+.checklist__item {
+  color: #f5f0e6;
+}
+
+.checklist__icon {
+  color: #f4a742;
+}
+
+.faq-item {
+  padding: 0 var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.faq-item__question {
+  color: #ffffff;
+}
+
+.faq-item__answer {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ============ WhatsApp — contraste forte no fundo escuro/laranja ============ */
+
+.btn-whatsapp {
+  box-shadow: 0 10px 40px rgba(37, 211, 102, 0.4);
+}
+
+.wa-sticky {
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+}
+
+/* ============ Seção Diferencial Técnico (vitrine) ============ */
+
+.section--diferencial {
+  padding-block: 100px;
+}
+
+@media (min-width: 860px) {
+  .section--diferencial {
+    padding-block: 140px;
+  }
+}
+
+.diferencial-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-sm);
+}
+
+.diferencial-bullets {
+  display: grid;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.diferencial-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  font-size: var(--fs-md);
+  line-height: var(--lh-relaxed);
+  color: #f5f0e6;
+}
+
+.diferencial-bullets__icon {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.2rem;
+  color: #f4a742;
+}
+
+.authority-quote {
+  margin-top: var(--space-lg);
+  max-width: 640px;
+  margin-inline: auto;
+  padding-left: var(--space-md);
+  border-left: 3px solid #f4a742;
+  font-style: italic;
+  font-size: var(--fs-lg);
+  line-height: var(--lh-relaxed);
+  text-align: left;
+  color: #ffffff;
+}
+
+/* ============ Ilustração da seção Agitação (rosto com pontos de calor) ============ */
+
+.agitation-layout__icon {
+  background: transparent;
+}
+
+.heat-face {
+  color: #ffffff;
+}
+
+.heat-face__point {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: heat-pulse 3.2s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes heat-pulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  16% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  34% {
+    opacity: 0.55;
+    transform: scale(0.95);
+  }
+  50%,
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+/* ============ Mecanismo multidisciplinar (2 blocos) ============ */
+
+.specialty-grid {
+  display: grid;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+@media (min-width: 860px) {
+  .specialty-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+.specialty-card {
+  padding: var(--space-lg);
+  transition: all var(--transition-base);
+}
+
+.specialty-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.specialty-card__icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: rgba(244, 167, 66, 0.15);
+  color: #f4a742;
+  margin-bottom: var(--space-sm);
+}
+
+.specialty-card__eyebrow {
+  display: block;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.35rem;
+}
+
+.specialty-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.specialty-card__text {
+  margin-top: var(--space-sm);
+  font-size: var(--fs-body);
+  line-height: var(--lh-relaxed);
+  color: rgba(245, 240, 230, 0.85);
+}
+
+.specialty-card__bullets {
+  margin-top: var(--space-md);
+  display: grid;
+  gap: 0.6rem;
+}
+
+.specialty-card__bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: var(--fs-sm);
+  color: #f5f0e6;
+}
+
+.specialty-card__bullets svg {
+  flex-shrink: 0;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.15rem;
+  color: #f4a742;
+}
+
+/* Diagrama de integração — fecha o bloco mostrando as duas frentes se somando */
+.integration-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.integration-diagram__node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: #f5f0e6;
+  text-align: center;
+}
+
+.integration-diagram__node svg {
+  width: 2.25rem;
+  height: 2.25rem;
+  color: #f4a742;
+}
+
+.integration-diagram__op {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: #f4a742;
+}
+
+/* ============ Autoridade — contadores ============ */
+
+.counter-grid {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.counter {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.counter__value {
+  color: #f4a742;
+}
+
+.counter__label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ============ Stepper (como funciona) ============ */
+
+.step::before {
+  background: rgba(244, 167, 66, 0.15);
+  color: #f4a742;
+}
+
+.step.is-visible::before {
+  background: #f4a742;
+  color: #0a1520;
+}
+
+.step__title {
+  color: #ffffff;
+}
+
+.step__text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.step:not(:last-child)::after {
+  background: rgba(255, 255, 255, 0.15);
+}

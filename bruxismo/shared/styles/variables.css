@@ -1,0 +1,104 @@
+/**
+ * Design tokens — Clínica Creabily
+ *
+ * Paleta extraída do CSS aplicado ao vivo em creabily.com (Wix):
+ *  - --color-primary: roxo #652C93, aplicado como `color` em título/corpo
+ *    de texto rico em dezenas de blocos do site (ex.: #comp-mfn5oudf3,
+ *    #comp-mfn6eoaz3) e é a cor do wordmark "creabily" na logo oficial.
+ *  - --color-accent: turquesa #5FC8BF, aplicado via custom property
+ *    `--color` em componente de ícone do site, e é a cor do símbolo da
+ *    logo oficial.
+ * Tons -dark/-light abaixo são derivados (mistura com preto/branco), pois
+ * o site não expõe uma escala tonal própria para essas duas cores.
+ */
+
+:root {
+  /* Cor primária — roxo da marca Creabily */
+  --color-primary: #652c93;
+  --color-primary-dark: #49206a;
+  --color-primary-light: #ede6f2;
+
+  /* Cor de destaque — turquesa da marca, usada com moderação (ícones, links, badges) */
+  --color-accent: #5fc8bf;
+
+  /* WhatsApp — cor reconhecível, usada apenas no CTA de contato */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1ea952;
+
+  /* Neutros — cinzas neutros (não pretos/verdes puros) para leitura confortável */
+  --color-text: #333333;
+  --color-text-muted: #666666;
+  --color-bg: #ffffff;
+  --color-bg-soft: #f8f6f3;
+  --color-border: #e5e5e5;
+  --color-white: #ffffff;
+  --color-overlay: rgba(17, 8, 26, 0.62);
+
+  /*
+   * Tipografia — Google Fonts (link + preconnect devem estar no <head> de
+   * cada LP; ver acupuntura/index.html como referência).
+   *  - Headlines: Playfair Display (serif, credibilidade médica)
+   *  - Corpo/labels: Inter (sans-serif, legibilidade)
+   */
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  --font-base: var(--font-body);
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+  --fs-3xl: 2.75rem;
+
+  /* Hierarquia tipográfica principal (mobile-first, ajustada em >=860px) */
+  --fs-h1: 3rem; /* 48px mobile */
+  --fs-h2: 2rem; /* 32px mobile */
+  --fs-body: 1rem; /* 16px mobile */
+  --fs-micro: 0.875rem; /* 14px */
+
+  --lh-tight: 1.1;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  /* Espaçamento */
+  --space-2xs: 0.375rem;
+  --space-xs: 0.625rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Layout */
+  --container-width: 1200px;
+  --container-padding: 1.25rem;
+
+  /* Bordas e sombras */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 2px 8px rgba(15, 26, 23, 0.06);
+  --shadow-md: 0 8px 24px rgba(15, 26, 23, 0.1);
+  --shadow-lg: 0 16px 40px rgba(15, 26, 23, 0.14);
+
+  --transition-base: 0.3s ease;
+
+  /* Z-index */
+  --z-sticky: 999;
+  --z-header: 50;
+}
+
+@media (min-width: 860px) {
+  :root {
+    --fs-h1: 4rem; /* 64px desktop */
+    --fs-h2: 2.625rem; /* 42px desktop */
+    --fs-body: 1.125rem; /* 18px desktop */
+  }
+}
