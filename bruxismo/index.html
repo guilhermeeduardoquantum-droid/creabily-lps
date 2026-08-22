@@ -93,9 +93,6 @@
   </script>
 </head>
 <body>
-  <!-- Ambiente termográfico único, fixo atrás de toda a página -->
-  <div class="dither-background dither-fixed" data-colors="termografia" aria-hidden="true"></div>
-
   <!-- ===== HEADER (shared/components/header.html) ===== -->
   <header class="site-header">
     <div class="container">
@@ -120,7 +117,7 @@
 
   <main>
     <!-- ===== 1. HERO ===== -->
-    <section class="hero section-transparent">
+    <section class="hero">
       <video
         class="hero__video"
         autoplay
@@ -158,7 +155,7 @@
     </section>
 
     <!-- ===== 2. IDENTIFICAÇÃO DO PROBLEMA ===== -->
-    <section class="section section-glass">
+    <section class="section section-soft">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title" data-reveal="fade-up">
@@ -211,8 +208,8 @@
       </div>
     </section>
 
-    <!-- ===== 3. AGITAÇÃO (transparente — deixa o ambiente termográfico global aparecer) ===== -->
-    <section class="section section-transparent">
+    <!-- ===== 3. AGITAÇÃO ===== -->
+    <section class="section">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title" data-reveal="fade-up">Por que a plaquinha, sozinha, não resolve</h2>
@@ -298,7 +295,7 @@
     </section>
 
     <!-- ===== 4. MECANISMO MULTIDISCIPLINAR ===== -->
-    <section class="section section-glass">
+    <section class="section section-soft">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title" data-reveal="fade-up">
@@ -407,8 +404,8 @@
       </div>
     </section>
 
-    <!-- ===== 5. DIFERENCIAL TÉCNICO: TERMOGRAFIA (seção-vitrine, transparente sobre o ambiente global) ===== -->
-    <section class="section section-transparent section--diferencial">
+    <!-- ===== 5. DIFERENCIAL TÉCNICO: TERMOGRAFIA (seção-vitrine) ===== -->
+    <section class="section section--diferencial">
       <div class="container">
         <div class="section-header">
           <span class="diferencial-badge">★ Diferencial exclusivo Creabily</span>
@@ -462,7 +459,7 @@
     </section>
 
     <!-- ===== 6. AUTORIDADE ===== -->
-    <section class="section section-glass">
+    <section class="section">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title" data-reveal="fade-up">Cuidado integrado, não fragmentado</h2>
@@ -497,7 +494,7 @@
     </section>
 
     <!-- ===== 7. COMO FUNCIONA (stepper 5 passos) ===== -->
-    <section class="section section-glass">
+    <section class="section section-soft">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title" data-reveal="fade-up">Seu primeiro passo até o alívio</h2>
@@ -556,7 +553,7 @@
     </section>
 
     <!-- ===== 8. FAQ ===== -->
-    <section class="section section-glass">
+    <section class="section">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title" data-reveal="fade-up">Perguntas frequentes</h2>
@@ -629,7 +626,7 @@
     </section>
 
     <!-- ===== 9. CTA FINAL ===== -->
-    <section class="section cta-final section-glass">
+    <section class="section cta-final">
       <div class="container">
         <h2 class="section-title" data-reveal="fade-up">
           Você não precisa continuar convivendo com essa tensão
@@ -761,6 +758,5 @@
   ></script>
   <script src="shared/components/scroll-reveal.js"></script>
   <script src="shared/components/faq-accordion.js"></script>
-  <script src="shared/components/dither-background.js"></script>
 </body>
 </html>
